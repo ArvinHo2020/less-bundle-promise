@@ -36,7 +36,7 @@
     "url": "https://github.com/mzohaibqc/less-bundle-promise/issues"
   },
   "scripts": {
-    "build": "tsc --lib es2015,dom --outDir build src/index.ts",
+    "build": "tsc --lib es2015,dom --outDir ./ src/index.ts",
     "predeploy": "cp package.json build/package.json && cp README.md build/README.md",
     "deploy": "npm publish"
   }

@@ -38,7 +38,8 @@ function buildContents(lines: Array<string>, filePath: string) {
             }
 
             if (imported.match(/^~/)) {
-                hashPath = imported.replace('~', path.join(__dirname, '../../'));
+                // hashPath = imported.replace('~', path.join(__dirname, '../../'));
+                hashPath = imported.replace('~',`${process.cwd()}/node_modules/`);
             } else {
                 hashPath = path.resolve(filePath, '..', imported);
             }
